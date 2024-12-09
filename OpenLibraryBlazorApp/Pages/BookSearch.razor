@@ -1,0 +1,112 @@
+﻿@page "/search-books"
+
+
+<div class="flex justify-center mt-10">
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+    <div class="relative w-full max-w-4xl">
+        <input id="default-search"
+               class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500"
+               @bind="SearchTerm"
+               placeholder="Enter book title or author"
+               required />
+        <button class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2"
+                @onclick="SearchBooks">
+            Search
+        </button>
+    </div>
+</div>
+
+
+
+@if (Books == null)
+{
+    <h2>No results yet. Start a search!</h2>
+}
+else if (Books.Count == 0)
+{
+    <h2>No books found for "<strong>@SearchTerm</strong>".</h2>
+}
+else
+{
+    <div class="flex justify-center">
+        <div class="grid grid-cols-4 gap-10">
+            @foreach (var book in Books)
+            {
+                <div class="relative m-10 flex justify-center items-center w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md">
+                    <a class="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
+                        <img class="object-cover" src="@book.CoverImageUrl" alt="product image" style="width: auto; height: auto;" />
+                    </a>
+                    <div class="mt-4 px-5 pb-5">
+                        <a href="#">
+                            <h5 class="text-3xl font-bold text-slate-9000">@book.Title</h5>
+                        </a>
+                        <div class="mt-2 mb-5 flex items-center justify-between">
+                            <p>
+                                <span class="text-3xl font-bold text-slate-900">Author: @string.Join(", ", book.AuthorName)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+}
+
+@code {
+    private string SearchTerm = string.Empty;
+    private List<Book> Books;
+
+    private async Task SearchBooks()
+    {
+        if (string.IsNullOrWhiteSpace(SearchTerm))
+        {
+            return;
+        }
+
+        try
+        {
+            var client = new HttpClient();
+            var response = await client.GetFromJsonAsync<OpenLibraryApiResponse>($"https://openlibrary.org/search.json?q={Uri.EscapeDataString(SearchTerm)}");
+            Books = response?.docs.Select(doc => new Book
+                {
+                    Title = doc.Title,
+                    AuthorName = doc.AuthorName ?? new List<string>(),
+                    EditionCount = doc.EditionCount,
+                    PublishYear = doc.PublishYear ?? new List<int>(),
+                    CoverImageUrl = doc.CoverId.HasValue
+                        ? $"https://covers.openlibrary.org/b/id/{doc.CoverId.Value}-L.jpg"
+                        : null  // Set to null if there's no cover ID
+                }).ToList() ?? new List<Book>();
+                    
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error fetching books: {ex.Message}");
+        }
+    }
+
+    private class OpenLibraryApiResponse
+    {
+        public List<Book> docs { get; set; } = new();
+    }
+
+    private class Book
+    {
+        public string Title { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("author_name")]
+        public List<string> AuthorName { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("cover_i")]
+        public int? CoverId { get; set; }
+        public string CoverImageUrl { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("edition_count")]
+        public int? EditionCount { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("publish_year")]
+        public List<int> PublishYear { get; set; }
+    }
+}
+

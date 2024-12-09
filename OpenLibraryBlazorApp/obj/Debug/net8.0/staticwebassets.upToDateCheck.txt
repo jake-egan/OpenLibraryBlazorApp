@@ -1,0 +1,4 @@
+wwwroot\banner.jpg
+wwwroot\css\app.css
+wwwroot\icon-192.png
+wwwroot\index.html
