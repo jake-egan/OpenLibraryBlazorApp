@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\wwwroot\\no_cover.jpg",
+      "PackagePath": "staticwebassets\\no_cover.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OpenLibraryBlazorApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

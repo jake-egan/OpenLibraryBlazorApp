@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:pages\\booksearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\layout\\topnavmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:layout\\topnavmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\layout\\topnavmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:layout\\topnavmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,12 +33,8 @@
           "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Layout\\MainLayout.razor",
@@ -49,6 +45,10 @@
               "WhenOpened": "2024-12-09T20:11:47.979Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -65,7 +65,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "wwwroot\\index.html",
@@ -73,12 +73,11 @@
               "RelativeToolTip": "wwwroot\\index.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-09T19:03:24.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T19:03:24.774Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TopNavMenu.razor",
               "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Layout\\TopNavMenu.razor",
               "RelativeDocumentMoniker": "Layout\\TopNavMenu.razor",
@@ -97,7 +96,7 @@
               "RelativeDocumentMoniker": "Pages\\BookSearch.razor",
               "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\BookSearch.razor",
               "RelativeToolTip": "Pages\\BookSearch.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAE4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-09T19:00:20.54Z",
               "EditorCaption": ""

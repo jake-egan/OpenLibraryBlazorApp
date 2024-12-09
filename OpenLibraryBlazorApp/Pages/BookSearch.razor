@@ -35,7 +35,7 @@ else
                 <div class="relative m-10 flex justify-center items-center w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md">
                     <a class="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
                         <img class="object-cover" src="@book.CoverImageUrl" alt="product image" style="width: auto; height: auto;" />
-                    </a>
+                    </a> 
                     <div class="mt-4 px-5 pb-5">
                         <a href="#">
                             <h5 class="text-3xl font-bold text-slate-9000">@book.Title</h5>
@@ -76,7 +76,7 @@ else
                     PublishYear = doc.PublishYear ?? new List<int>(),
                     CoverImageUrl = doc.CoverId.HasValue
                         ? $"https://covers.openlibrary.org/b/id/{doc.CoverId.Value}-L.jpg"
-                        : null  // Set to null if there's no cover ID
+                        : "no_cover.jpg"  // Set to null if there's no cover ID
                 }).ToList() ?? new List<Book>();
                     
         }
