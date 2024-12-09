@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XFRvcE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Jake/OpenLibraryBlazorApp/OpenLibraryBlazorApp/Pages/BookDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va0RldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Jake/OpenLibraryBlazorApp/OpenLibraryBlazorApp/Pages/BookSearch.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1NlYXJjaC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
