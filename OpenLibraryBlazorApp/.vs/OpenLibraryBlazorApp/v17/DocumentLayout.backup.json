@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\layout\\topnavmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:layout\\topnavmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\pages\\bookpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:pages\\bookpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\pages\\booksearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:pages\\booksearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\pages\\bookdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:pages\\bookdetails.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\pages\\genresearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:pages\\genresearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\layout\\topnavmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:layout\\topnavmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,89 +42,117 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T20:11:47.979Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookDetails.razor",
-              "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\BookDetails.razor",
-              "RelativeDocumentMoniker": "Pages\\BookDetails.razor",
-              "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\BookDetails.razor",
-              "RelativeToolTip": "Pages\\BookDetails.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T21:22:46.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\Home.razor",
-              "RelativeToolTip": "Pages\\Home.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T20:09:46.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "wwwroot\\index.html",
               "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\wwwroot\\index.html",
               "RelativeToolTip": "wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-12-09T19:03:24.774Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GenreSearch.razor",
+              "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\GenreSearch.razor",
+              "RelativeDocumentMoniker": "Pages\\GenreSearch.razor",
+              "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\GenreSearch.razor",
+              "RelativeToolTip": "Pages\\GenreSearch.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T01:59:02.729Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "wwwroot\\css\\app.css",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAGAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-10T02:33:17.525Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TopNavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Layout\\TopNavMenu.razor",
-              "RelativeDocumentMoniker": "Layout\\TopNavMenu.razor",
-              "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Layout\\TopNavMenu.razor",
-              "RelativeToolTip": "Layout\\TopNavMenu.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T19:03:07.532Z",
+              "WhenOpened": "2024-12-10T02:10:06.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\Home.razor",
+              "RelativeToolTip": "Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T02:09:56.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "BookSearch.razor",
               "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\BookSearch.razor",
               "RelativeDocumentMoniker": "Pages\\BookSearch.razor",
               "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\BookSearch.razor",
               "RelativeToolTip": "Pages\\BookSearch.razor",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAE4AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T19:00:20.54Z",
+              "WhenOpened": "2024-12-10T01:55:22.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookPage.razor",
+              "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\BookPage.razor",
+              "RelativeDocumentMoniker": "Pages\\BookPage.razor",
+              "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\BookPage.razor",
+              "RelativeToolTip": "Pages\\BookPage.razor",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAwwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T02:16:20.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TopNavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Layout\\TopNavMenu.razor",
+              "RelativeDocumentMoniker": "Layout\\TopNavMenu.razor",
+              "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Layout\\TopNavMenu.razor",
+              "RelativeToolTip": "Layout\\TopNavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T01:49:30.364Z",
               "EditorCaption": ""
             }
           ]

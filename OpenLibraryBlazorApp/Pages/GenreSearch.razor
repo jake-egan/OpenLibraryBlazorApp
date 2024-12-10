@@ -1,25 +1,5 @@
-﻿@page "/search"
-
-<div class="flex justify-center mt-10">
-    <label for="search-type" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search Type</label>
-    <div class="relative w-full max-w-4xl">
-        <select id="search-type"
-        class="absolute top-2.5 left-2.5 px-2 py-1 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500"
-        @bind="SearchType">
-            <option value="title">Title</option>
-            <option value="author">Author</option>
-        </select>
-        <input id="default-search"
-        class="block w-full p-4 pl-32 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500"
-        @bind="SearchTerm"
-        placeholder="Enter book title or author"
-        required />
-        <button class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2"
-        @onclick="SearchBooks">
-            Search
-        </button>
-    </div>
-</div>
+﻿@page "/genre/{subject}"
+@inject HttpClient Http
 
 @if (Books == null)
 {
@@ -27,7 +7,7 @@
 }
 else if (Books.Count == 0)
 {
-    <h2>No books found for "<strong>@SearchTerm</strong>".</h2>
+    <h2>No books found for "<strong>OnInitializedAsync()</strong>".</h2>
 }
 else
 {
@@ -57,30 +37,31 @@ else
 }
 
 @code {
+
+    [Parameter]
+    public string Subject { get; set; }
+
+
     private string SearchTerm = string.Empty;
     private string SearchType = "title"; // Default to "title"
     private List<Book> Books;
 
-    private async Task SearchBooks()
+    protected override async Task OnParametersSetAsync()
     {
-        if (string.IsNullOrWhiteSpace(SearchTerm))
-        {
-            return;
-        }
 
         try
         {
             var client = new HttpClient();
-            var response = await client.GetFromJsonAsync<OpenLibraryApiResponse>($"https://openlibrary.org/search.json?{SearchType}={Uri.EscapeDataString(SearchTerm)}");
-            Books = response?.docs.Select(doc => new Book
+            var response = await client.GetFromJsonAsync<OpenLibraryApiResponse>($"https://openlibrary.org/subjects/{Subject}.json");
+            Books = response?.works.Select(doc => new Book
                 {
-                    Id = doc.Id.Replace("/works/",""), // Each book has a unique id which is "/works/unqiuekey" removing the /works was simple solution
+                    Id = doc.Id.Replace("/works/", ""), // Each book has a unique id which is "/works/unqiuekey" removing the /works was simple solution
                     Title = doc.Title,
                     AuthorName = doc.AuthorName ?? new List<string>(),
                     PublishYear = doc.PublishYear,
                     CoverImageUrl = doc.CoverId.HasValue
-                            ? $"https://covers.openlibrary.org/b/id/{doc.CoverId.Value}-L.jpg"
-                            : "no_cover.jpg"
+                                ? $"https://covers.openlibrary.org/b/id/{doc.CoverId.Value}-L.jpg"
+                                : "no_cover.jpg"
                 }).ToList() ?? new List<Book>();
 
         }
@@ -92,18 +73,18 @@ else
 
     private class OpenLibraryApiResponse
     {
-        public List<Book> docs { get; set; } = new();
+        public List<Book> works { get; set; } = new();
     }
 
     private class Book
     {
-        
+
         public string Title { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("author_name")]
         public List<string> AuthorName { get; set; }
 
-        [System.Text.Json.Serialization.JsonPropertyName("cover_i")]
+        [System.Text.Json.Serialization.JsonPropertyName("cover_id")]
         public int? CoverId { get; set; }
         public string CoverImageUrl { get; set; }
 

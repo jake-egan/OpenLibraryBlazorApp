@@ -1,0 +1,104 @@
+﻿@page "/book/{id}"
+@inject HttpClient Http
+@using System.Text.Json
+
+@if (book == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="min-h-screen flex flex-col">
+        <div class="bg-gray-100 py-8 flex-1">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row -mx-4">
+                    <div class="md:flex-1 px-4">
+                        <div class="h-[460px] rounded-lg bg-gray-300 mb-4 flex justify-center items-center">
+                            <img class="w-full h-full object-contain" src="@book.CoverImageUrl" alt="Book Cover">
+                        </div>
+                    </div>
+                    <div class="md:flex-1 px-4">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-2">@book.Title</h2>
+                        <div class="mb-4">
+                            <span class="font-bold text-gray-700">Subjects:</span>
+                            <div class="flex items-center mt-2">
+                                @if (book.Subjects.Count > 4)
+                                {
+                                    @for (int i = 0; i < 4; i++)
+                                    {
+                                        <button class="bg-gray-300 text-gray-700 py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400">@book.Subjects[i]</button>
+                                    }
+                                    <button class="bg-gray-300 text-gray-700 py-2 px-4 rounded-full font-bold hover:bg-gray-400">
+                                        +@(book.Subjects.Count - 4) more
+                                    </button>
+                                }
+                                else
+                                {
+                                    @foreach (var subject in book.Subjects)
+                                    {
+                                        <button class="bg-gray-300 text-gray-700 py-2 px-4 rounded-full font-bold mr-2 hover:bg-gray-400">@subject</button>
+                                    }
+                                }
+                            </div>
+                        </div>
+                        <div>
+                            <span class="font-bold text-gray-700">Product Description:</span>
+                            <p class="text-gray-600 text-sm mt-2">
+                                @(book.Description ?? "No description available.")
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+}
+
+@code {
+    [Parameter]
+    public string Id { get; set; }
+
+    private BookDetail book;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            book = await Http.GetFromJsonAsync<BookDetail>($"https://openlibrary.org/works/{Id}.json");
+            book.CoverImageUrl = $"https://covers.openlibrary.org/b/id/{book.Covers?.FirstOrDefault() ?? 0}-L.jpg";
+            
+            
+            // sometimes descriptions format is different in the api which would cause certain pages to not load.
+            if (book.Description is JsonElement descriptionElement && descriptionElement.ValueKind == JsonValueKind.Object)
+            {
+                // Case where Description is an object and contains 'value' property
+                if (descriptionElement.TryGetProperty("value", out JsonElement valueProperty))
+                {
+                    book.Description = valueProperty.GetString();
+                }
+                
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error fetching book details: {ex.Message}");
+        }
+    }
+
+    
+
+    
+
+    private class BookDetail
+    {
+        public string Title { get; set; }
+
+        public dynamic Description { get; set; }
+        public List<int> Covers { get; set; }
+        public string CoverImageUrl { get; set; }
+        public List<string> Subjects { get; set; }
+
+}
+}

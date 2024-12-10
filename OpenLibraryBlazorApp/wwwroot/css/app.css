@@ -93,4 +93,7 @@ nav {
             color: #0056b3;
             text-decoration: underline;
         }
+#dropdownMenu {
+    z-index: 1050;
+}
 
