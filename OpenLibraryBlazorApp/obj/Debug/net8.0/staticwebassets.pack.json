@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
+      "Id": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\wwwroot\\Librarian.png",
+      "PackagePath": "staticwebassets\\Librarian.png"
+    },
+    {
       "Id": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\wwwroot\\banner.jpg",
       "PackagePath": "staticwebassets\\banner.jpg"
     },

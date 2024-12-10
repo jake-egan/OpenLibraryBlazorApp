@@ -23,7 +23,12 @@
 
 @if (Books == null)
 {
-    <h2 class="text-center">Start a search!</h2>
+    <div class="text-center mb-4">
+        <h1 class="text-3xl font-bold">Search to find the item you are looking for!</h1>
+    </div>
+    <div class="flex justify-center items-center">
+        <img class="mx-auto" src="Librarian.png" alt="Description" />
+    </div>
 }
 else if (Books.Count == 0)
 {

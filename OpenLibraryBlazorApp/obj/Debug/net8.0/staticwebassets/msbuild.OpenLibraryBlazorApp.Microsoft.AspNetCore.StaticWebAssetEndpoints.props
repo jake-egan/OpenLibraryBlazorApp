@@ -48,6 +48,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"n5keahkgwe"},{"Name":"integrity","Value":"sha256-i8s40a6Eje9QRSOJgPG67GZvl4bL0osS3mcTyTw6V14="},{"Name":"label","Value":"index.html"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1177"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022i8s40a6Eje9QRSOJgPG67GZvl4bL0osS3mcTyTw6V14=\u0022"},{"Name":"Last-Modified","Value":"Tue, 10 Dec 2024 03:43:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="Librarian.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Librarian.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Ol2XcSZSXrfzWnnU0J3WeSY0\u002BCZbRI90uUUJvFfDO/8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"68494"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022Ol2XcSZSXrfzWnnU0J3WeSY0\u002BCZbRI90uUUJvFfDO/8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 10 Dec 2024 17:41:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="Librarian.qjoy28pc05.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Librarian.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qjoy28pc05"},{"Name":"integrity","Value":"sha256-Ol2XcSZSXrfzWnnU0J3WeSY0\u002BCZbRI90uUUJvFfDO/8="},{"Name":"label","Value":"Librarian.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"68494"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022Ol2XcSZSXrfzWnnU0J3WeSY0\u002BCZbRI90uUUJvFfDO/8=\u0022"},{"Name":"Last-Modified","Value":"Tue, 10 Dec 2024 17:41:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="no_cover.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\no_cover.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

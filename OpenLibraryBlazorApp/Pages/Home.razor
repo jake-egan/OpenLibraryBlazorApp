@@ -1,5 +1,11 @@
 ﻿@page "/" 
-<h1 class="text-center text-5xl font-bold">Trending Today</h1>
+
+<div class="banner relative">
+    <img src="banner.jpg" alt="Banner" class="w-full h-64 object-cover">
+    <h1 class="absolute inset-0 flex justify-center items-center text-white text-5xl font-bold">
+        Trending Today
+    </h1>
+</div>
 <div class="w-full relative pt-6 flex items-center">
     <div class="swiper centered-slide-carousel swiper-container relative">
         <div class="swiper-wrapper">
@@ -57,7 +63,8 @@
         try
         {
             var client = new HttpClient();
-            var response = await client.GetFromJsonAsync<OpenLibraryApiResponse>($"https://openlibrary.org/trending/daily.json?limit=5");
+            // limit = returns only that amount
+            var response = await client.GetFromJsonAsync<OpenLibraryApiResponse>($"https://openlibrary.org/trending/daily.json?limit=10");
             Books = response?.works.Select(doc => new Book
                 {
                     Id = doc.Id.Replace("/works/", ""), // Each book has a unique id which is "/works/unqiuekey" removing the /works was simple solution
