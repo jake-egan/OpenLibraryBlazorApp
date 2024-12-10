@@ -1032,6 +1032,6 @@ C:\Users\Jake\OpenLibraryBlazorApp\OpenLibraryBlazorApp\obj\Debug\net8.0\OpenLib
 C:\Users\Jake\OpenLibraryBlazorApp\OpenLibraryBlazorApp\obj\Debug\net8.0\refint\OpenLibraryBlazorApp.dll
 C:\Users\Jake\OpenLibraryBlazorApp\OpenLibraryBlazorApp\obj\Debug\net8.0\OpenLibraryBlazorApp.pdb
 C:\Users\Jake\OpenLibraryBlazorApp\OpenLibraryBlazorApp\obj\Debug\net8.0\ref\OpenLibraryBlazorApp.dll
-C:\Users\Jake\OpenLibraryBlazorApp\OpenLibraryBlazorApp\obj\Debug\net8.0\compressed\w5bhdz0xmk-qownjdr86v.gz
-C:\Users\Jake\OpenLibraryBlazorApp\OpenLibraryBlazorApp\obj\Debug\net8.0\compressed\o66inyksmu-9apgbmmrct.gz
-C:\Users\Jake\OpenLibraryBlazorApp\OpenLibraryBlazorApp\obj\Debug\net8.0\compressed\iqftvvlwg2-wwws4kxc16.gz
+C:\Users\Jake\OpenLibraryBlazorApp\OpenLibraryBlazorApp\obj\Debug\net8.0\compressed\w5bhdz0xmk-muuq3gi86h.gz
+C:\Users\Jake\OpenLibraryBlazorApp\OpenLibraryBlazorApp\obj\Debug\net8.0\compressed\o66inyksmu-n87jciofmq.gz
+C:\Users\Jake\OpenLibraryBlazorApp\OpenLibraryBlazorApp\obj\Debug\net8.0\compressed\iqftvvlwg2-p3hauzegbc.gz

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpenLibraryBlazorApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+353bd812b137341f97cf4ac5d5a512cfdf361802")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a005e8cb0cbfe2cfe5aa6480e7eb9d7e6f568746")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpenLibraryBlazorApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpenLibraryBlazorApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
