@@ -23,7 +23,7 @@
 
 @if (Books == null)
 {
-    <h2>No results yet. Start a search!</h2>
+    <h2 class="text-center">Start a search!</h2>
 }
 else if (Books.Count == 0)
 {
@@ -97,20 +97,20 @@ else
 
     private class Book
     {
-        
-        public string Title { get; set; }
+
+        public string Title { get; set; } = "Untitled"; // Default to avoid null
 
         [System.Text.Json.Serialization.JsonPropertyName("author_name")]
-        public List<string> AuthorName { get; set; }
+        public List<string> AuthorName { get; set; } = new List<string>(); // Default to avoid null
 
         [System.Text.Json.Serialization.JsonPropertyName("cover_i")]
         public int? CoverId { get; set; }
-        public string CoverImageUrl { get; set; }
+        public string CoverImageUrl { get; set; } = "no_cover.jpg"; // Default to avoid null
 
         [System.Text.Json.Serialization.JsonPropertyName("first_publish_year")]
         public int PublishYear { get; set; }
 
         [System.Text.Json.Serialization.JsonPropertyName("key")]
-        public string Id { get; set; }
+        public string Id { get; set; } = ""; // set as blank so if null it will not cause errors
     }
 }

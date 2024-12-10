@@ -1,7 +1,97 @@
-﻿@page "/"
+﻿@page "/" 
+<h1 class="text-center text-5xl font-bold">Trending Today</h1>
+<div class="w-full relative pt-6 flex items-center">
+    <div class="swiper centered-slide-carousel swiper-container relative">
+        <div class="swiper-wrapper">
+            @foreach (var book in Books)
+            {
+                <div class="swiper-slide">
+                    <div class="rounded-2xl h-96 flex justify-center items-center">
+                        <a href="book/@book.Id" class="rounded-2xl h-96 flex justify-center items-center">
+                            <img src="@book.CoverImageUrl" alt="@book.Title" class="h-full w-auto object-cover" />
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
 
-<PageTitle>Home</PageTitle>
+<script>
+    var swiper = new Swiper(".centered-slide-carousel", {
+     centeredSlides: true,
+     paginationClickable: true,
+     loop: true,
+     spaceBetween: 30,
+     slideToClickedSlide: true,
+     pagination: {
+       el: ".centered-slide-carousel .swiper-pagination",
+       clickable: true,
+     },
+     breakpoints: {
+       1920: {
+         slidesPerView: 4,
+         spaceBetween: 30
+       },
+       1028: {
+         slidesPerView: 2,
+         spaceBetween: 10
+       },
+       990: {
+         slidesPerView: 1,
+         spaceBetween: 0
+       }
+     }
+    });
+</script>
 
-<h1>Hello, world!</h1>
+@code {
 
-Welcome to your new app.
+    private string SearchTerm = string.Empty;
+    private List<Book> Books = new List<Book>();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        try
+        {
+            var client = new HttpClient();
+            var response = await client.GetFromJsonAsync<OpenLibraryApiResponse>($"https://openlibrary.org/trending/daily.json?limit=5");
+            Books = response?.works.Select(doc => new Book
+                {
+                    Id = doc.Id.Replace("/works/", ""), // Each book has a unique id which is "/works/unqiuekey" removing the /works was simple solution
+                    Title = doc.Title,
+                    AuthorName = doc.AuthorName ?? new List<string>(),
+                    CoverImageUrl = doc.CoverId.HasValue
+                                    ? $"https://covers.openlibrary.org/b/id/{doc.CoverId.Value}-L.jpg"
+                                    : "no_cover.jpg"
+                }).ToList() ?? new List<Book>();
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error fetching books: {ex.Message}");
+        }
+    }
+
+    private class OpenLibraryApiResponse
+    {
+        public List<Book> works { get; set; } = new();
+    }
+
+    private class Book
+    {
+
+        public string Title { get; set; } = ""; // Default to avoid null
+
+        [System.Text.Json.Serialization.JsonPropertyName("author_name")]
+        public List<string> AuthorName { get; set; } = new List<string>(); // Default to avoid null
+
+        [System.Text.Json.Serialization.JsonPropertyName("cover_i")]
+        public int? CoverId { get; set; }
+        public string CoverImageUrl { get; set; } = "no_cover.jpg"; // Default to avoid null
+        [System.Text.Json.Serialization.JsonPropertyName("key")]
+        public string Id { get; set; } = ""; // set as blank so if null it will not cause errors
+    }
+}

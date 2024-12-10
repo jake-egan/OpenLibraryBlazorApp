@@ -4,7 +4,7 @@
 
 @if (book == null)
 {
-    <p>Loading...</p>
+    <p>This page is loading</p>
 }
 else
 {
@@ -13,7 +13,7 @@ else
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row -mx-4">
                     <div class="md:flex-1 px-4">
-                        <div class="h-[460px] rounded-lg bg-gray-300 mb-4 flex justify-center items-center">
+                        <div class="h-[460px] rounded-lg mb-4 flex justify-center items-center">
                             <img class="w-full h-full object-contain" src="@book.CoverImageUrl" alt="Book Cover">
                         </div>
                     </div>
@@ -58,22 +58,26 @@ else
 
 @code {
     [Parameter]
-    public string Id { get; set; }
+    public string Id { get; set; } = ""; // set as blank so if null it will not cause errors
 
     private BookDetail book;
+
+
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
             book = await Http.GetFromJsonAsync<BookDetail>($"https://openlibrary.org/works/{Id}.json");
-            book.CoverImageUrl = $"https://covers.openlibrary.org/b/id/{book.Covers?.FirstOrDefault() ?? 0}-L.jpg";
-            
+            book.CoverImageUrl = book.Covers?.FirstOrDefault() != null
+    ? $"https://covers.openlibrary.org/b/id/{book.Covers.First()}-L.jpg"
+    : "no_cover.jpg";
+
             
             // sometimes descriptions format is different in the api which would cause certain pages to not load.
+            // the apis description value is often a string but other times it is a json element with the value 'value'
             if (book.Description is JsonElement descriptionElement && descriptionElement.ValueKind == JsonValueKind.Object)
             {
-                // Case where Description is an object and contains 'value' property
                 if (descriptionElement.TryGetProperty("value", out JsonElement valueProperty))
                 {
                     book.Description = valueProperty.GetString();
@@ -93,12 +97,10 @@ else
 
     private class BookDetail
     {
-        public string Title { get; set; }
-
-        public dynamic Description { get; set; }
-        public List<int> Covers { get; set; }
-        public string CoverImageUrl { get; set; }
-        public List<string> Subjects { get; set; }
-
-}
+        public string Title { get; set; } = "Untitled"; // Default to avoid null
+        public dynamic Description { get; set; } = "No description available."; // Default to avoid null
+        public List<int> Covers { get; set; } = new List<int>(); // Default to avoid null
+        public string CoverImageUrl { get; set; } = "no_cover.jpg"; // Default to avoid null
+        public List<string> Subjects { get; set; } = new List<string>(); // Default to avoid null
+    }
 }
