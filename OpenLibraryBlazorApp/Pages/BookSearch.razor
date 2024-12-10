@@ -41,12 +41,18 @@ else
                     </a>
                     <div class="mt-4 px-5 pb-5">
                         <a href="book/@book.Id">
-                            <h5 class="text-3xl font-bold text-slate-900">@book.Title</h5>
+                            <h5 class="text-center font-bold tracking-tight text-gray-900">@book.Title</h5>
                         </a>
-                        <div class="mt-2 mb-5 flex items-center justify-between">
+                        <div class="mb-5 flex justify-center">
                             <p>
-                                <span class="text-3xl font-bold text-slate-900">Author: @string.Join(", ", book.AuthorName)</span>
-                                <span class="text-3xl font-bold text-slate-900">Year Published: @string.Join(", ", book.PublishYear)</span>
+                                <span class="text-sm text-gray-500 ">Author: @string.Join(", ", book.AuthorName)</span>
+
+                            </p>
+                        </div>
+                        <div class="mb-5 flex justify-center">
+                            <p>
+                                <span class="text-sm text-gray-500 ">Published: @string.Join(", ", book.PublishYear)</span>
+
                             </p>
                         </div>
                     </div>
@@ -92,25 +98,42 @@ else
 
     private class OpenLibraryApiResponse
     {
-        public List<Book> docs { get; set; } = new();
+        public List<Work> docs { get; set; } = new();
     }
+
+    private class Work {
+
+        [System.Text.Json.Serialization.JsonPropertyName("title")]
+        public string Title { get; set; } = "Untitled";
+
+        [System.Text.Json.Serialization.JsonPropertyName("author_name")]
+        public List<string> AuthorName { get; set; } = new();
+
+        [System.Text.Json.Serialization.JsonPropertyName("cover_i")]
+        public int? CoverId { get; set; }
+        
+
+        [System.Text.Json.Serialization.JsonPropertyName("first_publish_year")]
+        public int PublishYear { get; set; }
+
+        [System.Text.Json.Serialization.JsonPropertyName("key")]
+        public string Id { get; set; } = "";
+    
+    }
+
 
     private class Book
     {
 
         public string Title { get; set; } = "Untitled"; // Default to avoid null
 
-        [System.Text.Json.Serialization.JsonPropertyName("author_name")]
         public List<string> AuthorName { get; set; } = new List<string>(); // Default to avoid null
 
-        [System.Text.Json.Serialization.JsonPropertyName("cover_i")]
         public int? CoverId { get; set; }
         public string CoverImageUrl { get; set; } = "no_cover.jpg"; // Default to avoid null
 
-        [System.Text.Json.Serialization.JsonPropertyName("first_publish_year")]
         public int PublishYear { get; set; }
 
-        [System.Text.Json.Serialization.JsonPropertyName("key")]
         public string Id { get; set; } = ""; // set as blank so if null it will not cause errors
     }
 }

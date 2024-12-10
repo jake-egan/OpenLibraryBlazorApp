@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\pages\\genresearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:pages\\genresearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\pages\\booksearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:pages\\booksearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\pages\\bookpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:pages\\bookpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\pages\\booksearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:pages\\booksearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|c:\\users\\jake\\openlibraryblazorapp\\openlibraryblazorapp\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD76EF69-F0F6-47AD-A444-5B2C537CB73E}|OpenLibraryBlazorApp.csproj|solutionrelative:pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,52 +30,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Pages\\Home.razor",
               "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\Home.razor",
               "RelativeToolTip": "Pages\\Home.razor",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAYwDIAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAYwFcAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-10T04:32:17.408Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GenreSearch.razor",
-              "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\GenreSearch.razor",
-              "RelativeDocumentMoniker": "Pages\\GenreSearch.razor",
-              "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\GenreSearch.razor",
-              "RelativeToolTip": "Pages\\GenreSearch.razor",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACgAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T04:30:57.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "BookPage.razor",
               "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\BookPage.razor",
               "RelativeDocumentMoniker": "Pages\\BookPage.razor",
               "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\BookPage.razor",
               "RelativeToolTip": "Pages\\BookPage.razor",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAewGYAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAgwD4AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-10T04:27:04.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "BookSearch.razor",
               "DocumentMoniker": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\BookSearch.razor",
               "RelativeDocumentMoniker": "Pages\\BookSearch.razor",
               "ToolTip": "C:\\Users\\Jake\\OpenLibraryBlazorApp\\OpenLibraryBlazorApp\\Pages\\BookSearch.razor",
               "RelativeToolTip": "Pages\\BookSearch.razor",
-              "ViewState": "AgIAACkAAAAAAAAAAAAewD0AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAwHcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-10T04:24:00.078Z",
               "EditorCaption": ""
